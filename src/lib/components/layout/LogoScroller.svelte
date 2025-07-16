@@ -28,7 +28,6 @@
 	data-scroller
 	class="grid place-items-center gap-4 self-end py-4 {label ? 'sm:py-12' : 'sm:py-8'}"
 	class:!flex={layout === "horizontal"}
-	class:dark={mode === "dark"}
 	{...rest}
 >
 	{#if label}
@@ -49,8 +48,7 @@
 				<img
 					src={logo}
 					alt="Company logo"
-					class="mx-8 h-5 w-fit object-contain opacity-70 saturate-0 dark:invert
-					"
+					class="mx-8 h-5 w-fit object-contain opacity-70 saturate-0"
 				/>
 			{/each}
 		</Marquee>

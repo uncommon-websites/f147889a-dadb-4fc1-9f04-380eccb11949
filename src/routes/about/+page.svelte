@@ -11,33 +11,32 @@
 	// Constants
 	const values = [
 		{
-			title: "Innovation",
-			description: "Constantly challenging the status quo to create better solutions."
+			title: "Proactive automation",
+			description: "We believe the best technology anticipates your needs and acts before you even ask."
 		},
 		{
-			title: "Integrity",
-			description: "Building trust through transparent actions and honest communication."
+			title: "Privacy first",
+			description: "Your data stays yours with local-only processing and encrypted storage—no compromises."
 		},
 		{
-			title: "Impact",
-			description: "Measuring our success by the positive change we create for our clients."
+			title: "Deep focus",
+			description: "We're building the future where context switching becomes a thing of the past."
 		}
 	];
 </script>
 
 <SecondaryHero
-	title="Solving world hunger"
-	subtitle="one step at a time"
-	imageSrc="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80"
+	title="Automating your workflow"
+	subtitle="before you even ask"
+	imageSrc="/generated/image-two-focused-software-engineers-collabora.webp"
 />
 
 <!-- Story Section -->
 <Story
 	paragraphs={[
-		"We started in 2018 with a simple goal: make helpful tech that people actually need. While many chase profits, we chose to do things differently.",
-		"Beyond making good products, we care about doing the right thing, being kind to our planet, and making sure everyone can use what we build. That's our compass.",
-		"From day one, we've asked ourselves: 'Does this actually help people?' This question gets us through tough calls and shapes who we are. We're playing the long game here.",
-		"We think about how our work affects real people's lives. We build tech that brings people together, keeps your information safe, and treats everyone fairly. When we stick to these basics, good things happen."
+		"We started Attention after watching brilliant engineers and product managers lose hours every day to context switching and forgotten tasks. Despite having the best productivity tools available, they were still drowning in the mental overhead of managing their workflows.",
+		"Our founders Julian and Aidan brought together deep technical expertise in screen recording AI with proven entrepreneurial execution. Julian's background in ML research under Martin Kleppman at Cambridge gave us the foundation to solve proactive desktop assistance through advanced screen analysis.",
+		"Today, we're building the future of workflow automation—software that learns your patterns and executes repetitive tasks before you even ask. With local-only processing and encrypted data storage, we're proving that powerful automation doesn't require sacrificing privacy."
 	]}
 />
 
@@ -51,53 +50,25 @@
 	subtitle="Your partners in innovation."
 	stakeholders={[
 		{
-			name: "Alex Morgan",
-			position: "Founder & CEO",
-			bio: "Started the company with a vision to transform the industry through innovative solutions.",
-			image:
-				"https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80"
+			name: "Aidan Guo",
+			position: "CEO & Cofounder",
+			bio: "Entrepreneurial leader with proven execution experience from previous exits, focused on building the future of workflow automation.",
+			image: "/generated/image-a-professional-headshot-of-aidan-guo-sit.webp"
 		},
 		{
-			name: "Jamie Chen",
-			position: "Chief Design Officer",
-			bio: "Award-winning designer with a passion for creating intuitive and beautiful experiences.",
-			image:
-				"https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=776&q=80"
-		},
-		{
-			name: "Taylor Wright",
-			position: "Head of Engineering",
-			bio: "Technology enthusiast focused on building scalable systems that make a difference.",
-			image:
-				"https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80"
+			name: "Julian Windeck",
+			position: "CTO & Cofounder",
+			bio: "ML research expert with Cambridge PhD background under Martin Kleppman, specialized in advanced screen analysis and proactive desktop assistance.",
+			image: "/generated/image-a-professional-headshot-of-julian-windec.webp"
 		}
 	]}
 />
 
-<StakeholderGrid
-	stakeholderType="investor"
-	title="Backed by the best."
-	subtitle="Point Nine, TSIC and others"
-	stakeholders={[
-		{
-			name: "Point Nine Capital",
-			image: "https://cdn.brandfetch.io/pointnine.com/w/400/h/400/logo?c=1id_elLz2Bd5Ej-dWo7"
-		},
-		{
-			name: "TSIC Ventures",
-			image: "https://cdn.brandfetch.io/tiny.vc/w/400/h/400/logo?c=1a2b3c4d5e"
-		},
-		{
-			name: "Sequoia Capital",
-			image: "https://cdn.brandfetch.io/sequoiacap.com/w/400/h/400/logo"
-		}
-	]}
-/>
+<!-- Investors section removed as per company context -->
 
 <!-- CTA Section -->
 <CallToAction
-	generating
-	title="Ready to collaborate?"
-	subtitle="Let's create something amazing"
-	description="Join the companies already leveraging our expertise to transform their digital presence and achieve their business goals."
+	title="Ready to reclaim your focus?"
+	subtitle="Stop losing hours to context switching"
+	description="Join the power users and developers who've already discovered how Attention learns their patterns and executes repetitive tasks before they even ask. Experience proactive workflow automation that respects your privacy."
 />

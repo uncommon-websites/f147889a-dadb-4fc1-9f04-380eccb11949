@@ -21,10 +21,9 @@ A minimalist teaser for the about page.
 
 	// Data
 	const teamMember: TeamMember = {
-		name: "Alex Morgan",
-		role: "Founder & CEO",
-		image:
-			"https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80"
+		name: "Aidan Guo",
+		role: "CEO & Cofounder",
+		image: "/generated/image-a-professional-headshot-of-a-young-asian.webp"
 	};
 </script>
 
@@ -33,7 +32,7 @@ A minimalist teaser for the about page.
 		<div class="relative mx-auto grid max-w-2xl place-items-center gap-16">
 			<ScrollText
 				class="text-title1 text-center"
-				text={`"We're building the future of digital experiences, crafting innovative solutions that transform how people interact with technology in their everyday lives"`}
+				text={`"After watching brilliant engineers lose hours to context switching, we knew there had to be a better way. Attention isn't just another productivity tool - it's a proactive AI that learns your patterns and executes tasks before you even ask."`}
 			/>
 
 			<!-- Team Member & CTA Section -->

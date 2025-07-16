@@ -11,7 +11,7 @@
 <script lang="ts">
 	// Types
 
-	// Components
+	// Icons
 	import IconArrowUpRight from "~icons/lucide/arrow-up-right";
 
 	// Utils

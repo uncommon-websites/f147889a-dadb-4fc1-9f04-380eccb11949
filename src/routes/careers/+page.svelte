@@ -24,18 +24,18 @@
 
 	const benefits = [
 		{
-			title: "Flexible Work",
-			description: "Remote-first with flexible hours that respect work-life balance.",
+			title: "Shape the future of productivity",
+			description: "Work on cutting-edge AI and automation technology that fundamentally changes how people work and stay focused.",
 			icon: IconBriefcase
 		},
 		{
-			title: "Growth Opportunities",
-			description: "Continuous learning with mentorship and education stipends.",
+			title: "Deep technical challenges",
+			description: "Solve complex problems in screen recording AI, workflow automation, and privacy-first computing alongside world-class engineers.",
 			icon: IconUsers
 		},
 		{
-			title: "Comprehensive Benefits",
-			description: "Health coverage, retirement plans, and generous paid time off.",
+			title: "Early-stage equity opportunity",
+			description: "Join a fast-growing company targeting the $240B productivity market with significant equity upside potential.",
 			icon: IconHeart
 		}
 	];
@@ -122,68 +122,68 @@
 
 	const employeeTestimonials = [
 		{
-			name: "Michael Chen",
-			position: "Senior Developer",
-			company: "Engineering Team",
+			name: "Sarah Kim",
+			position: "Senior Software Engineer",
+			company: "AI Team",
 			quote:
-				"Working here has given me the opportunity to tackle challenging problems while maintaining a healthy work-life balance. The team culture is supportive and collaborative.",
+				"Building the screen recording AI that powers Attention's automation is the most intellectually stimulating work I've ever done. The privacy-first approach means we're solving harder problems, but that's what makes it exciting. Plus, the deep focus culture here actually lets me code for hours without interruption.",
 			image:
-				"https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+				"/generated/image-professional-headshot-of-a-young-asian-w.webp"
 		},
 		{
-			name: "Priya Sharma",
-			position: "Product Designer",
-			company: "Design Team",
+			name: "Marcus Thompson",
+			position: "Product Manager",
+			company: "Product Team",
 			quote:
-				"The creative freedom and opportunity to influence product decisions makes this the best place I've ever worked. I'm constantly learning and growing.",
+				"What drew me to Attention was the opportunity to help power users reclaim their productivity. Seeing developers go from losing 3 hours daily to context switching to having seamless automation is incredibly rewarding. The founders' technical depth makes product decisions so much more informed.",
 			image:
-				"https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+				"/generated/image-professional-headshot-of-a-black-man-pro.webp"
 		},
 		{
-			name: "Marcus Johnson",
-			position: "Marketing Lead",
-			company: "Marketing Team",
+			name: "Elena Rodriguez",
+			position: "Backend Developer",
+			company: "Infrastructure Team",
 			quote:
-				"I joined three years ago and have grown tremendously. The leadership truly invests in your development and the work environment is both challenging and supportive.",
+				"The technical challenges here are unreal - from local-only processing to encrypted data storage, we're pushing the boundaries of what's possible. I've grown more in six months here than in two years at my previous company. The equity opportunity as we target the $240B productivity market is just the cherry on top.",
 			image:
-				"https://images.unsplash.com/photo-1531384441138-2736e62e0919?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+				"/generated/image-professional-headshot-of-a-hispanic-woma.webp"
 		}
 	];
 
 	const processSteps = [
 		{
 			step: 1,
-			title: "Apply",
+			title: "Apply with code",
 			description:
-				"Submit your application through our careers portal with your resume and portfolio."
+				"Share your GitHub, technical portfolio, and tell us about a challenging problem you've solved. We value quality over quantity."
 		},
 		{
 			step: 2,
-			title: "Interview",
-			description: "Meet with our team to discuss your experience, skills, and career aspirations."
+			title: "Technical conversation",
+			description: "Pair program with our team, discuss system design, and explore how you approach automation challenges. No whiteboarding."
 		},
 		{
 			step: 3,
-			title: "Welcome aboard",
-			description: "Join our team and start your journey building the future with us."
+			title: "Culture fit and offer",
+			description: "Meet the founders, understand our mission, and if we're aligned, receive an offer with competitive equity and benefits."
 		}
 	];
 
 	const values = [
 		{
 			icon: IconHeart,
-			title: "Passion",
-			description: "We're driven by a shared passion for innovation and excellence."
+			title: "Technical excellence",
+			description: "We obsess over code quality, system design, and creating elegant solutions to complex automation problems."
 		},
 		{
 			icon: IconUsers,
-			title: "Collaboration",
-			description: "We believe in teamwork and collaboration to achieve great things."
+			title: "Privacy-first mindset",
+			description: "Local-only processing and encrypted data storage aren't just features - they're core values that guide every decision."
 		},
 		{
 			icon: IconGlobe,
-			title: "Global Impact",
-			description: "We're committed to making a positive impact on the world."
+			title: "Deep focus culture",
+			description: "We practice what we preach by maintaining focused work environments and minimizing context switching."
 		}
 	];
 </script>
@@ -191,14 +191,13 @@
 <!-- Hero Section -->
 
 <SecondaryHero
-	generating
-	title="Join our team of innovators"
-	subtitle="We're looking for passionate people to help us build the future of digital experiences. Discover your next opportunity with us."
-	imageSrc="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+	title="Build the future of workflow automation"
+	subtitle="Join our team of engineers and product builders who are passionate about creating proactive AI that transforms how people work. We're looking for talented individuals who thrive in deep focus environments and want to solve complex technical challenges."
+	imageSrc="/generated/image-a-diverse-team-of-developers-working-in-.webp"
 />
 
 <!-- Why Join Us Section -->
-<section class={SECTION_BASE_CLASSES} generating>
+<section class={SECTION_BASE_CLASSES}>
 	<SectionHeader title="Why join us?" subtitle="Build your career while making an impact" />
 
 	<div class="mt-16 grid gap-4 md:grid-cols-3">
@@ -209,12 +208,12 @@
 </section>
 
 <!-- Culture Section -->
-<Culture {values} generating />
+<Culture {values} />
 
-<Testimonials testimonials={employeeTestimonials} generating />
+<Testimonials testimonials={employeeTestimonials} />
 
 <!-- Application Process -->
-<section class={SECTION_BASE_CLASSES} generating>
+<section class={SECTION_BASE_CLASSES}>
 	<div class="mx-auto">
 		<h2 class="text-title1 mb-16">Our application process</h2>
 
@@ -232,7 +231,7 @@
 	</div>
 </section>
 <!-- Current Openings Section -->
-<section class={GRADIENT_BG_CLASSES} generating>
+<section class={GRADIENT_BG_CLASSES}>
 	<div class="section-px section-py container mx-auto grid w-full items-start lg:grid-cols-2">
 		<SectionHeader title="Current openings" subtitle="Find your perfect role" />
 

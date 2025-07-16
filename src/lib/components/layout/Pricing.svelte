@@ -28,123 +28,153 @@ Please update features according to the company's product offering. Do not remov
 	// Components
 	import Button from "$lib/components/ui/Button.svelte";
 	import SectionHeader from "./SectionHeader.svelte";
-	import IconCheck from "~icons/lucide/check";
-	import IconX from "~icons/lucide/x";
 	import NumberFlow from "@number-flow/svelte";
 	import LogoScroller from "./LogoScroller.svelte";
+	
+	// Icons
+	import IconCheck from "$lib/icons/Check.svelte";
+	import IconX from "$lib/icons/X.svelte";
 
 	// Props
 	const {
 		title = "Simple, transparent pricing",
-		subtitle = "Choose the plan that works best for your needs",
-		tierNames = ["Starter", "Pro", "Enterprise"],
+		subtitle = "Choose the plan that works best for your productivity needs",
+		tierNames = ["Individual", "Team", "Enterprise"],
 		features = [
 			{
-				name: "Projects",
+				name: "Screen recording storage",
 				tiers: {
-					Starter: "5",
-					Pro: "Unlimited",
+					Individual: "30 days",
+					Team: "90 days",
+					Enterprise: "1 year"
+				}
+			},
+			{
+				name: "Workflow automations",
+				tiers: {
+					Individual: "50/month",
+					Team: "500/month",
 					Enterprise: "Unlimited"
 				}
 			},
 			{
 				name: "Team members",
 				tiers: {
-					Starter: "1",
-					Pro: "10",
+					Individual: "1",
+					Team: "10",
 					Enterprise: "Unlimited"
 				}
 			},
 			{
-				name: "Storage",
+				name: "AI pattern recognition",
 				tiers: {
-					Starter: "1GB",
-					Pro: "10GB",
+					Individual: "Basic",
+					Team: "Advanced",
+					Enterprise: "Advanced"
+				}
+			},
+			{
+				name: "Custom integrations",
+				tiers: {
+					Individual: false,
+					Team: "5",
 					Enterprise: "Unlimited"
+				}
+			},
+			{
+				name: "Local data processing",
+				tiers: {
+					Individual: true,
+					Team: true,
+					Enterprise: true
+				}
+			},
+			{
+				name: "Priority support",
+				tiers: {
+					Individual: "48 hours",
+					Team: "24 hours",
+					Enterprise: "4 hours"
 				}
 			},
 			{
 				name: "API access",
 				tiers: {
-					Starter: false,
-					Pro: true,
+					Individual: false,
+					Team: true,
 					Enterprise: true
 				}
 			},
 			{
-				name: "Custom domains",
+				name: "Advanced analytics",
 				tiers: {
-					Starter: false,
-					Pro: true,
+					Individual: false,
+					Team: true,
 					Enterprise: true
 				}
 			},
 			{
-				name: "Analytics",
+				name: "Custom workflow triggers",
 				tiers: {
-					Starter: "Basic",
-					Pro: "Advanced",
-					Enterprise: "Advanced"
+					Individual: false,
+					Team: "50",
+					Enterprise: "Unlimited"
 				}
 			},
 			{
-				name: "Support response time",
+				name: "SSO integration",
 				tiers: {
-					Starter: "24 hours",
-					Pro: "4 hours",
-					Enterprise: "1 hour"
+					Individual: false,
+					Team: false,
+					Enterprise: true
 				}
 			},
 			{
 				name: "Dedicated account manager",
 				tiers: {
-					Starter: false,
-					Pro: false,
+					Individual: false,
+					Team: false,
 					Enterprise: true
-				}
-			},
-			{
-				name: "SLA",
-				tiers: {
-					Starter: false,
-					Pro: false,
-					Enterprise: "99.9%"
 				}
 			}
 		],
 		tiers = [
 			{
-				name: "Starter",
-				monthlyPrice: 9.99,
-				yearlyPrice: 7.99, // 20% savings
-				description: "Perfect for individuals and small projects",
+				name: "Individual",
+				monthlyPrice: 19,
+				yearlyPrice: 15, // 21% savings
+				description: "Perfect for solo developers and power users",
 				features: [
-					"Up to 5 projects",
-					"Basic analytics",
-					"24-hour support response time",
-					"1GB storage"
+					"30 days of screen recording storage",
+					"50 workflow automations per month",
+					"Basic AI pattern recognition",
+					"Local data processing",
+					"Email support (48hr response)",
+					"Desktop app for Mac, Windows, Linux"
 				],
 				cta: {
-					label: "Get started",
-					href: "/signup?plan=starter"
+					label: "Start free trial",
+					href: "/signup?plan=individual"
 				}
 			},
 			{
-				name: "Pro",
-				monthlyPrice: 29.99,
-				yearlyPrice: 23.99, // 20% savings
-				description: "For growing teams and businesses",
+				name: "Team",
+				monthlyPrice: 49,
+				yearlyPrice: 39, // 20% savings
+				description: "For engineering teams and growing companies",
 				features: [
-					"Unlimited projects",
-					"Advanced analytics",
-					"4-hour support response time",
-					"10GB storage",
-					"Custom domains",
-					"Team collaboration tools"
+					"90 days of screen recording storage",
+					"500 workflow automations per month",
+					"Advanced AI pattern recognition",
+					"Up to 10 team members",
+					"5 custom integrations",
+					"API access and webhooks",
+					"Advanced analytics dashboard",
+					"Priority support (24hr response)"
 				],
 				cta: {
-					label: "Get started",
-					href: "/signup?plan=pro"
+					label: "Start free trial",
+					href: "/signup?plan=team"
 				},
 				highlight: true
 			},
@@ -152,15 +182,19 @@ Please update features according to the company's product offering. Do not remov
 				name: "Enterprise",
 				monthlyPrice: null,
 				yearlyPrice: null,
-				description: "For large organizations with specific needs",
+				description: "For large organizations with advanced security needs",
 				features: [
-					"Everything in Pro",
+					"1 year of screen recording storage",
+					"Unlimited workflow automations",
+					"Unlimited team members",
+					"Unlimited custom integrations",
+					"SSO integration (SAML, OIDC)",
+					"Advanced security controls",
+					"On-premise deployment option",
 					"Dedicated account manager",
-					"1-hour support response time",
-					"Unlimited storage",
-					"Advanced security features",
-					"Custom integrations",
-					"99.9% uptime SLA"
+					"Custom workflow triggers",
+					"Priority support (4hr response)",
+					"Custom SLA available"
 				],
 				cta: {
 					label: "Contact sales",
@@ -188,13 +222,13 @@ Please update features according to the company's product offering. Do not remov
 		<div class="mb-8 flex justify-center">
 			<div class="inline-flex items-center rounded-full bg-gray-200 p-0.5 gap-0.5">
 				<button
-					class="rounded-full px-4 py-1.5 text-sm font-semibold transition-all duration-200 {!annual ? 'bg-white text-gray-900 shadow-sm' : 'text-gray-600 hover:text-gray-900'}"
+					class="rounded-full px-4 py-1.5 text-sm font-semibold transition-all duration-200 {!annual ? 'bg-white text-gray-900 border border-gray-200' : 'text-gray-600 hover:text-gray-900'}"
 					onclick={() => (annual = false)}
 				>
 					Monthly
 				</button>
 				<button
-					class="rounded-full px-4 py-1.5 text-sm font-semibold transition-all duration-200 {annual ? 'bg-white text-gray-900 shadow-sm' : 'text-gray-600 hover:text-gray-900'}"
+					class="rounded-full px-4 py-1.5 text-sm font-semibold transition-all duration-200 {annual ? 'bg-white text-gray-900 border border-gray-200' : 'text-gray-600 hover:text-gray-900'}"
 					onclick={() => (annual = true)}
 				>
 					Annual <span class="text-xs ml-1 text-gray-500">Save 20%</span>
@@ -206,11 +240,7 @@ Please update features according to the company's product offering. Do not remov
 	<div class="bb grid gap-6 md:grid-cols-2 lg:grid-cols-3">
 		{#each tiers as tier}
 			<div
-				class="flex flex-col rounded-xl bg-white p-6 ring ring-gray-200 transition-all duration-300 dark:bg-gray-800 dark:ring-gray-700"
-				class:ring-2={tier.highlight}
-				class:ring-primary={tier.highlight}
-				class:dark:ring-primary-700={tier.highlight}
-				class:translate-y-[-4px]={tier.highlight}
+				class="flex flex-col rounded-xl bg-white p-6 ring ring-gray-200 transition-all duration-300 dark:bg-gray-800 dark:ring-gray-700 {tier.highlight ? 'ring-2 ring-primary dark:ring-primary-700 -translate-y-1' : ''}"
 			>
 				<div class="mb-8">
 					<h3 class="text-title3 mb-4 dark:text-white">{tier.name}</h3>

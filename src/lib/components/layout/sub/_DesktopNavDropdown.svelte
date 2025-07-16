@@ -3,7 +3,8 @@
   import type { NavItem } from '$lib/navigation';
   // Components
   import { NavigationMenu } from 'bits-ui';
-  import IconChevronDown from '~icons/lucide/chevron-down';
+  // Simple SVG icon as component
+  const IconChevronDown = () => `<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>`;
 
   // Props
   let { item }: { item: NavItem } = $props();
@@ -20,10 +21,12 @@
 
 <NavigationMenu.Trigger class="group/item inline-flex h-full items-center gap-1">
 	{item.label}
-	<IconChevronDown
-		class="relative top-[1px] size-3 opacity-80 transition duration-200 ease-out group-hover/item:opacity-100 group-data-[state=open]:rotate-180 "
+	<span
+		class="relative top-[1px] size-3 opacity-80 transition duration-200 ease-out group-hover/item:opacity-100 group-data-[state=open]:rotate-180"
 		aria-hidden="true"
-	/>
+	>
+		{@html IconChevronDown()}
+	</span>
 </NavigationMenu.Trigger>
 
 <NavigationMenu.Content

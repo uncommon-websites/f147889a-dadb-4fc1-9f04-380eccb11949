@@ -17,33 +17,55 @@
 <Testimonials
 	testimonials={[
 		{
-			name: "Jane Smith",
-			position: "CTO",
-			company: "Tech Innovations",
+			name: "Kai Chen",
+			position: "Software Engineer",
+			company: "Mercury",
 			quote:
-				"This solution transformed our workflow and increased productivity by 35% in just two months.",
-			image:
-				"https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+				"Attention feels like having an invisible teammate who picks up the slack every time I get a Slack ping mid-flow. It's saved me 2+ hours daily without any setup.",
+			image: "/generated/image-professional-headshot-of-an-asian-male-s.webp"
 		},
 		{
-			name: "John Doe",
-			position: "Director of Operations",
-			company: "Global Solutions",
-			quote:
-				"The implementation was seamless and the support team was exceptional throughout the process.",
-			image:
-				"https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
-		},
-		{
-			name: "Sarah Johnson",
+			name: "Zara Williams",
 			position: "Product Manager",
-			company: "Future Systems",
+			company: "Supabase",
 			quote:
-				"We've tried multiple solutions, but this is the only one that perfectly addressed all our requirements.",
-			image:
-				"https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&estimonial-3.jpg"
+				"It remembers the little things I always forget. I haven't missed a single follow-up task in over a month. ROI was immediate—paid for itself in the first week.",
+			image: "/generated/image-professional-headshot-of-a-black-female-.webp"
+		},
+		{
+			name: "Mateo Rodriguez",
+			position: "Senior Engineer",
+			company: "Retool",
+			quote:
+				"Every automation platform claims to save you time. Attention actually does it—without setup, rules, or hacking together scripts. Reduced context switching by 40%.",
+			image: "/generated/image-professional-headshot-of-a-hispanic-male.webp"
+		},
+		{
+			name: "Leila Nazari",
+			position: "Engineering Manager",
+			company: "Vanta",
+			quote:
+				"Privacy was a dealbreaker for us. Attention nailed it with local-only processing. No tradeoffs. Team productivity increased 25% in just 3 weeks.",
+			image: "/generated/image-professional-headshot-of-a-middle-easter.webp"
 		}
 	]}
 />
 
-<CallToAction />
+<CallToAction
+	title="Ready to reclaim your focus?"
+	subtitle="Join thousands saving 2-3 hours daily"
+	description="Stop losing time to context switching and forgotten tasks. Attention learns your workflows through local screen recording and executes repetitive tasks before you even ask. Your data stays encrypted and private—entirely on your device."
+	imageSrc="/generated/image-a-software-engineer-sits-at-a-desk-smili.webp"
+	callsToAction={[
+		{
+			href: "/get-started",
+			label: "Start free trial",
+			variant: "primary"
+		},
+		{
+			href: "/contact",
+			label: "Talk to founders",
+			variant: "secondary"
+		}
+	]}
+/>

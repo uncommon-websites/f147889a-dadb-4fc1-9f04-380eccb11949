@@ -19,21 +19,18 @@ import IconMenu from '$lib/icons/Menu.svelte';
 // Create the mapping object
 const iconMap: Record<string, ComponentType> = {
   'users': IconUsers,
-  'clipboard-list': IconClipboardList,
-  'chart-bar': IconChartBar,
-  'shield-check': IconShieldCheck,
-  'chart-line': IconChartLine,
-  'shield-alert': IconShieldAlert,
-  'presentation-chart': IconPresentationChart,
-  'document-check': IconDocumentCheck,
-  'code-bracket': IconCodeBracket,
-  'cpu-chip': IconCpuChip,
-  'user-group': IconUserGroup,
-  'chart-bar-square': IconChartBarSquare,
-  'academic-cap': IconAcademicCap,
-  'clipboard-document-check': IconClipboardDocumentCheck,
-  'chart-pie': IconChartPie,
-  'cog': IconCog,
+  'clock': IconClock,
+  'laptop': IconLaptop,
+  'building': IconBuilding,
+  'briefcase': IconBriefcase,
+  'heart': IconHeart,
+  'globe': IconGlobe,
+  'check': IconCheck,
+  'x': IconX,
+  'arrow-up-right': IconArrowUpRight,
+  'chevron-right': IconChevronRight,
+  'chevron-down': IconChevronDown,
+  'menu': IconMenu,
 };
 
 export function getIconComponent(iconName: string): ComponentType | undefined {

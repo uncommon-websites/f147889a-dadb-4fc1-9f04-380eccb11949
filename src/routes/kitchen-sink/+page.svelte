@@ -4,11 +4,11 @@
 	import Features from "$lib/components/layout/Features.svelte";
 
 	// Icons
-	import IconZap from "~icons/lucide/zap";
-	import IconShield from "~icons/lucide/shield";
-	import IconUsers from "~icons/lucide/users";
-	import IconSettings from "~icons/lucide/settings";
-	import IconPalette from "~icons/lucide/palette";
+	import IconCheck from "$lib/icons/Check.svelte";
+	import IconHeart from "$lib/icons/Heart.svelte";
+	import IconUsers from "$lib/icons/Users.svelte";
+	import IconGlobe from "$lib/icons/Globe.svelte";
+	import IconBriefcase from "$lib/icons/Briefcase.svelte";
 
 	// Theme controls
 	let themeRadius = $state(8); // 0.5rem = 8px
@@ -37,7 +37,7 @@
 	<!-- Theme Controls -->
 	<div class="fixed top-4 right-4 z-50">
 		<Button variant="secondary" size="sm" onclick={() => (showControls = !showControls)}>
-			<IconSettings class="size-4" />
+			<IconGlobe class="size-4" />
 		</Button>
 
 		{#if showControls}
@@ -45,7 +45,7 @@
 				class="bg-card border-border absolute top-12 right-0 w-80 space-y-4 rounded-lg border p-4 shadow-lg"
 			>
 				<div class="mb-4 flex items-center gap-2">
-					<IconPalette class="text-primary size-4" />
+					<IconBriefcase class="text-primary size-4" />
 					<h3 class="text-headline font-medium">Theme Controls</h3>
 				</div>
 
@@ -160,12 +160,12 @@
 			<div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
 				<Card title="Basic Card" description="This is a basic card component with some content." />
 
-				<Card title="Card with Icon" description="A card that contains an icon." icon={IconZap} />
+				<Card title="Card with Icon" description="A card that contains an icon." icon={IconCheck} />
 
 				<Card
 					title="Custom Icon Color"
 					description="Icon with custom red color."
-					icon={IconZap}
+					icon={IconCheck}
 					iconClass="size-5 text-red-500"
 				/>
 
@@ -186,7 +186,7 @@
 				<Card
 					title="Icon + Landscape"
 					description="Icon overlay on landscape image."
-					icon={IconShield}
+					icon={IconHeart}
 					imageSrc="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80"
 					imageAspect="16/9"
 				/>
@@ -373,7 +373,7 @@
 				{
 					title: "AI-powered insights",
 					description: "Get intelligent recommendations powered by machine learning algorithms.",
-					icon: IconZap,
+					icon: IconCheck,
 					imageSrc:
 						"https://images.unsplash.com/photo-1677442136019-21780ecad995?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
 				}
@@ -388,7 +388,7 @@
 				{
 					title: "Lightning fast",
 					description: "Built for speed with optimized performance and caching.",
-					icon: IconZap
+					icon: IconCheck
 				},
 				{
 					title: "Global infrastructure",
@@ -407,7 +407,7 @@
 				{
 					title: "Bank-level security",
 					description: "Your data is protected with enterprise-grade encryption.",
-					icon: IconShield,
+					icon: IconHeart,
 					imageSrc:
 						"https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
 				},
@@ -433,14 +433,14 @@
 				{
 					title: "Cloud hosting",
 					description: "Reliable cloud infrastructure with 99.9% uptime.",
-					icon: IconZap,
+					icon: IconCheck,
 					imageSrc:
 						"https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80"
 				},
 				{
 					title: "Secure payments",
 					description: "PCI-compliant payment processing.",
-					icon: IconShield
+					icon: IconHeart
 				},
 				{
 					title: "Team management",
@@ -464,12 +464,12 @@
 				{
 					title: "API integration",
 					description: "Connect with third-party services seamlessly.",
-					icon: IconZap
+					icon: IconCheck
 				},
 				{
 					title: "Data encryption",
 					description: "End-to-end encryption for all data.",
-					icon: IconShield
+					icon: IconHeart
 				},
 				{
 					title: "Mobile apps",
@@ -485,7 +485,7 @@
 				{
 					title: "Advanced reporting",
 					description: "Detailed insights and custom reports.",
-					icon: IconShield,
+					icon: IconGlobe,
 					imageSrc:
 						"https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80"
 				}
@@ -500,12 +500,12 @@
 				{
 					title: "Auto-scaling",
 					description: "Automatically scale based on demand.",
-					icon: IconZap
+					icon: IconCheck
 				},
 				{
 					title: "SSL certificates",
 					description: "Free SSL certificates for all domains.",
-					icon: IconShield
+					icon: IconHeart
 				},
 				{
 					title: "Developer tools",
@@ -521,7 +521,7 @@
 				{
 					title: "Machine learning",
 					description: "AI-powered recommendations and insights.",
-					icon: IconZap,
+					icon: IconGlobe,
 					imageSrc:
 						"https://images.unsplash.com/photo-1677442136019-21780ecad995?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80"
 				},

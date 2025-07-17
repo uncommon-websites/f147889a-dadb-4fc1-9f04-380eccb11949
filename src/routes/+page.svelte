@@ -8,7 +8,6 @@
 <CenteredTextOnlyHero
 	title="Proactive workflow automation that learns from your patterns"
 	subtitle="Attention captures your screen activity and executes repetitive tasks before you even ask, saving software engineers 2-3 hours of context switching daily."
-	imageSrc="/generated/image-a-serene-workspace-with-a-muted-natural-.webp"
 />
 <LogoScroller 
 	label="Trusted by leading tech companies" 

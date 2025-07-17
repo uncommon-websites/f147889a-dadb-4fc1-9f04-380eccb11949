@@ -1,7 +1,7 @@
-# Task: Decrease Hero Font Size and Remove Image
+# Task: Improve Home Page Story Copy
 
-- [x] View CenteredTextOnlyHero component to understand current structure
-- [x] Remove imageSrc prop from CenteredTextOnlyHero usage in +page.svelte
-- [x] Decrease font size of hero headline in CenteredTextOnlyHero component
-- [x] Verify image is completely removed from hero section
+- [x] Analyze current story copy for em dashes and verbose content
+- [x] Rewrite story copy to be more inspirational and concise
+- [x] Remove all em dashes from the copy
+- [x] Update the Story component props in +page.svelte
 - [x] Final design system compliance check - verify design system classes prioritized over Tailwind, NO shadows, NO custom CSS, NO arbitrary values, check theme.css, app.css and typography.css

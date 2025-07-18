@@ -21,7 +21,9 @@
 
 <Story
 	paragraphs={[
-		"Your computer already knows how you work. Now it works for you.",
-		"Attention watches your screen (securely and locally), learns your patterns, and automates the tasks you forget or repeat. So you stay focused, responsive, and two steps ahead."
+		"You know that feeling when you're deep in code, and suddenly remember you promised to review that PR? Or when you're designing a feature and realize you never followed up on yesterday's Slack thread? Before you know it, you've lost three hours.",
+		"Your computer sees these patterns all day. It knows when you usually check email, when you context-switch, when you forget. What if it could automatically draft that review reminder or queue up those follow-ups right when you need them?",
+		"That's why we built Attention. It learns from your screen, understands your workflows, and quietly executes the repetitive tasks. Like scheduling that standup recap you always forget or preparing your daily PR reviews before you even open GitHub. Everything processes locally on your machine. No cloud, no privacy concerns.",
+		"Julian lost entire afternoons to forgotten follow-ups during his PhD. Aidan watched teammates drop critical tasks between meetings. They realized computers already know our patterns. They just needed to act on them."
 	]}
 />
